@@ -1,0 +1,96 @@
+a:link{
+  text-shadow:.01em .01em .5em #FF4476;
+  color: #134A5E;
+  text-decoration: none;
+}
+a:visited{
+  text-shadow:01em .01em .5em #DD5630;
+  color: #134A5E;
+  text-decoration: none;
+}
+a:hover{
+  color:#B2B2B2;
+}
+h1 {
+  font-size:10em;
+  font-family: 'Slabo 27px', serif;
+  color: #38AECC;
+  text-shadow:.10em .0em .10em #DD5630;
+}
+h2{
+  color: #134A5E;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+  font-size: 3em;
+  text-shadow:.05em 0em 0em #38AECC;
+}
+h3{
+  color: #b2b2b2;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 600;
+  font-size: 175%;
+  line-height:.5em;
+  text-shadow:.05em .05em 0em #111110;
+}
+body {
+  /*background-color:#134A5E;*/
+/*  padding-left: 25%;
+  padding-right: 25%;*/
+}
+
+p{
+  color: #111110;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+}
+strong{
+  text-shadow:0em 0em .5em #FF4476;
+}
+.masthead{
+  padding: 6em 0;
+  border-top:solid 1em #FF4476;
+  border-bottom:solid 1em #FF4476;
+  background-color:#134A5E;
+  background-image:url("http://i.imgur.com/Zqy9uDu.png?2");
+  background-size:cover;
+/*padding-bottom:1em;
+padding-top:1em*/
+}
+.mastfoot{
+    padding: 6em 0;
+  border-top:solid 1em #FF4476;
+  border-bottom:solid 1em #FF4476;
+  background-color:#134A5E;
+  background-image:url("http://i.imgur.com/Zqy9uDu.png?2");
+  background-size:cover;
+  
+}
+.mastfoot-signoff,
+.mastfoot-social,
+.masthead-heading,
+.masthead-intro{
+  text-align:center;
+}
+.mastfoot-signoff,
+.mastfoot-social,
+.masthead-intro{
+  margin-bottom:0.1em;
+  
+}
+.masthead-heading{
+  margin-bottom:-0.2em;
+}
+.intro,
+.location,
+.questions{
+/*  padding-left:25%;
+  padding-right:25%;*/
+  text-align:justify;
+  max-width: 38em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 2em;
+}
+.center{
+  text-align:center;
+}
