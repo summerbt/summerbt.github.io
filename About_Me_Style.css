@@ -1,3 +1,27 @@
+
+
+
+
+/* CSS reset 
+  (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+
+/* General styles 
+  (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+body {
+  color:white;
+}
+
 a:link{
   text-shadow:.01em .01em .5em #FF4476;
   color: #134A5E;
@@ -11,6 +35,7 @@ a:visited{
 a:hover{
   color:#B2B2B2;
 }
+
 h1 {
   font-size:10em;
   font-family: 'Slabo 27px', serif;
@@ -28,24 +53,59 @@ h3{
   color: #b2b2b2;
   font-family: 'Slabo 27px', serif;
   font-weight: 600;
-  font-size: 175%;
+  font-size: 1em;
   line-height:.5em;
   text-shadow:.05em .05em 0em #111110;
-}
-body {
-  /*background-color:#134A5E;*/
-/*  padding-left: 25%;
-  padding-right: 25%;*/
 }
 
 p{
   color: #111110;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
+  padding-top: 1em
 }
 strong{
   text-shadow:0em 0em .5em #FF4476;
 }
+
+.content{
+  width:60%;
+  margin: 0 auto
+}
+
+.center{
+  text-align:center;
+}
+
+.intro,
+.location,
+.questions{
+/*  padding-left:25%;
+  padding-right:25%;*/
+  text-align:justify;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 2em;
+}
+
+.mastfoot-signoff,
+.mastfoot-social,
+.masthead-heading,
+.masthead-intro{
+  text-align:center;
+}
+
+.mastfoot-signoff,
+.mastfoot-social,
+.masthead-intro{
+  margin-bottom:0.1em;
+  
+}
+
+/* Header styles 
+  (all the styles inside the < header > or < nav > tags) 
+*/
 .masthead{
   padding: 6em 0;
   border-top:solid 1em #FF4476;
@@ -56,8 +116,24 @@ strong{
 /*padding-bottom:1em;
 padding-top:1em*/
 }
+
+.masthead-heading{
+  margin-bottom:-0.2em;
+}
+
+
+
+
+/* Content styles 
+  (all the styles inside the < sections > or < aside > tags)
+*/
+
+
+/* Footer styles 
+  (all the styles inside the < footer > tag)
+*/
 .mastfoot{
-    padding: 6em 0;
+  padding: 6em 0;
   border-top:solid 1em #FF4476;
   border-bottom:solid 1em #FF4476;
   background-color:#134A5E;
@@ -65,32 +141,195 @@ padding-top:1em*/
   background-size:cover;
   
 }
-.mastfoot-signoff,
-.mastfoot-social,
-.masthead-heading,
-.masthead-intro{
-  text-align:center;
-}
-.mastfoot-signoff,
-.mastfoot-social,
-.masthead-intro{
-  margin-bottom:0.1em;
+
+
+/* Responsive styles 
+  (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query is a set of conditions in which the code inside will be executed*/
+
+/*mobile first approach*/
+
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+  .masthead p {
+    color:purple;
+  }
+
+  .content,
+  .intro,
+  .location,
+  .questions{
+    width: 90%;
+    margin: 0 auto;
+  }
+
   
+  .questions{
+    margin-bottom: 1em;
+  }  
+
+  .masthead h1{
+    font-size: 4em;
+    padding: 0 auto;
+  }
+
+  h2{
+    font-size: 2em;
+    margin-top:1em;
+
+  }
+
+  h3{
+    font-size: 1em;
+    margin-top: 1em;
+  }
+
+  p{
+    font-size: 0.9em
+  }
+
+
 }
-.masthead-heading{
-  margin-bottom:-0.2em;
+
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+  .masthead p {
+    color:green;
+  }
+
+  .content,
+  .intro,
+  .location,
+  .questions{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .questions{
+    margin-bottom: 1em;
+  }
+  
+
+  .masthead h1{
+    font-size: 5em;
+    padding: 0 auto;
+  }
+
+  h2{
+    font-size: 2.5em;
+    margin-top:1em;
+
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  p{
+    font-size: 1em
+  }
 }
-.intro,
-.location,
-.questions{
-/*  padding-left:25%;
-  padding-right:25%;*/
-  text-align:justify;
-  max-width: 38em;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 2em;
+
+
+
+/*ipad potrait*/
+@media only screen and (min-width: 768px) {
+  .masthead p {
+    color:red;
+  }
+
+  .content,
+  .intro,
+  .location,
+  .questions{
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .questions{
+    margin-bottom: 1em;
+  }
+  
+
+  .masthead h1{
+    font-size: 8em;
+    padding: 0 auto;
+  }
+
+  h2{
+    font-size: 3em;
+    margin-top:1em;
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  p{
+    font-size: 1.25em;
+  }
+
 }
-.center{
-  text-align:center;
+
+/*ipad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+  .masthead p {
+    color:blue;
+  }
+
+  .content,
+  .intro,
+  .location,
+  .questions{
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .questions{
+    margin-bottom: 1em;
+  }
+  
+
+  .masthead h1{
+    font-size: 8em;
+    padding: 0 auto;
+  }
+
+  h2{
+    font-size: 3em;
+    margin-top:1em;
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: .25em;
+  }
+
+  p{
+    font-size: 1.5em;
+  }
 }
